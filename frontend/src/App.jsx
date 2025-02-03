@@ -15,6 +15,11 @@ const App = () => {
       element: <Home />,
     },
     {
+      path: "/edit/:id",
+      loader: CheckAuth,
+      element: <Home />,
+    },
+    {
       path: "/login",
       element: <Login />,
     },

@@ -41,7 +41,7 @@ export const updateTodo = async (req, res) => {
       { text, completed },
       { new: true }
     );
-    console.log(text);
+    console.log("cccccccccccc", completed);
     if (!todo) {
       return res.status(404).json({ message: "Todo not found" });
     }
